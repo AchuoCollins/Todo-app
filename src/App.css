@@ -1,12 +1,17 @@
-h1{
+@import "tailwindcss";
+
+h1 {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: bold;
 }
 
-.todolist-wrapper{
+.todolist-wrapper {
     padding: 10px 20px;
 }
 
-.input-wrapper, ol{
+.input-wrapper,
+ol {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
@@ -17,22 +22,26 @@ h1{
     padding-bottom: 50px;
 
 }
-.input-wrapper{
+
+.input-wrapper {
     margin-bottom: 20px;
 }
 
-.input-wrapper button{
+.input-wrapper button {
     background-color: green;
     width: 15%;
     padding: 10px;
 }
+
 input[type="checkbox"] {
     width: 20px;
     height: 20px;
     margin-right: 10px;
     cursor: pointer;
-    accent-color: green; /* Change the color of the checkbox */
+    accent-color: green;
+    /* Change the color of the checkbox */
 }
+
 body {
     background-color: #f7f4f4;
     font-family: Arial, Helvetica, sans-serif;
@@ -46,21 +55,24 @@ body {
     color: #333;
 
 }
-li{
+
+li {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #ccc;
 }
+
 .actions {
     display: inline-block;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 button {
-    background-color: red;
+    background-color: #ed3535;
     border: none;
     color: white;
     padding: 5px 5px;
@@ -72,14 +84,17 @@ button {
     cursor: pointer;
     border-radius: 20px;
 }
+
 span.text {
     font-size: 20px;
     color: #333;
 }
+
 ol {
     list-style-type: decimal;
     padding-left: 20px;
 }
+
 input[type="text"] {
     width: 300px;
     padding: 10px;
@@ -89,18 +104,22 @@ input[type="text"] {
     border-radius: 20px;
     width: 80%;
 }
+
 .tasks {
     display: flex;
     gap: 50px;
     flex-direction: row;
 }
-.task{
+
+.task {
     flex: 1;
 }
-.complete{
+
+.complete {
     flex: 1;
 }
-.heading{
+
+.heading {
     display: flex;
     flex-direction: row;
     align-items: center;

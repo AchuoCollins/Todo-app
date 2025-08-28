@@ -1,7 +1,8 @@
 
-// import AiFillDelete from "react-icons/ai"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import React, { useEffect } from 'react'
+import { faTrash } from '@fortawesome/free-solid-svg-icons/faTrash';
 
 function Todolist() {
 
@@ -146,7 +147,7 @@ function Todolist() {
                 <div className="complete">
                     <div className="heading">
                         <h1>Completed Tasks</h1>
-                        <button style={{ backgroundColor: 'red' }} onClick={handleCheckDelete}>Delete</button>
+                        <button onClick={handleCheckDelete}><FontAwesomeIcon icon={faTrash}/></button>
                     </div>
                     <ol>
                         {complete.map((completed, index) => (
@@ -154,7 +155,7 @@ function Todolist() {
                                 <span className='text'>{completed}</span>
                                 <div className='actions'>
                                     <input type="checkbox" checked={CheckedItemsComplete[index] || false} onChange={() => handleCheckboxChangeComplete(index)} name="" id="" />
-                                    <button onClick={() => deleteTask(index)}>Delete</button>
+                                    <button onClick={() => deleteTask(index)}><FontAwesomeIcon icon={faTrash}/></button>
                                 </div>
                             </li>
                         ))}
